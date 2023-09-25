@@ -9,6 +9,6 @@ import (
 func main() {
 	fmt.Print("Input score : ")
 	reader := bufio.NewReader(os.Stdin)
-	inputScore := reader.ReadString('\n')
+	inputScore, err := reader.ReadString('\n') //err declared and not used
 	fmt.Println(inputScore)
 }
