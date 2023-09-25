@@ -15,4 +15,9 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Println(inputScore)
+	if inputScore >= 90 { //mismatched types string and untyped int
+		grade := "A grade!"
+	} else {
+		grade := "under A grade..."
+	}
 }
