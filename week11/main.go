@@ -10,4 +10,16 @@ func main() {
 	// var primes [3]int = [3]int{2, 3, 5}
 	primes := [3]int{2, 3, 5}
 	fmt.Println(primes, primes[1])
+
+	test := [5]bool{true, true, true}
+	fmt.Println(test)
+
+	// for i := 0; i < 3; i++ {
+	// 	fmt.Println(primes[i])
+	// }
+	i := 0
+	for i < 3 {
+		fmt.Println(primes[i])
+		i++
+	}
 }
