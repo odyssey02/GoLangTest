@@ -22,7 +22,11 @@ func main() {
 	// 	fmt.Println(primes[i])
 	// 	i++
 	// }
+	sum := 0
 	for _, prime := range primes {
-		fmt.Println(prime)
+		//fmt.Println(prime)
+		sum += prime
 	}
+	fmt.Println(sum)
+	fmt.Printf("%.2f\n", float64(sum)/float64(len(primes)))
 }
