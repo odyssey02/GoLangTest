@@ -17,9 +17,12 @@ func main() {
 	// for i := 0; i < 3; i++ {
 	// 	fmt.Println(primes[i])
 	// }
-	i := 0
-	for i < 3 {
-		fmt.Println(primes[i])
-		i++
+	// i := 0
+	// for i < 3 {
+	// 	fmt.Println(primes[i])
+	// 	i++
+	// }
+	for _, prime := range primes {
+		fmt.Println(prime)
 	}
 }
