@@ -3,11 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	// var s []int
-	// s = make([]int, 5)
-
-	// s := make([]int, 5) //단축연산자 사용 초기화
-
 	s := []int{0, 0, 0, 0, 0} //단축연산자, 슬라이스리터럴 사용 초기화
 
 	s[4] = 100
@@ -17,4 +12,15 @@ func main() {
 	for _, value := range s {
 		fmt.Println(value)
 	}
+
+	copys := s[1:4]
+	for _, value := range copys {
+		fmt.Println(value)
+	}
+
+	test := [3]string{"wade", "finn", "jake"}
+	testS := test[:2]
+	fmt.Println(test, len(test))
+	fmt.Println(testS, len(testS))
+
 }
