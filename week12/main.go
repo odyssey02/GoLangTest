@@ -20,7 +20,14 @@ func main() {
 
 	test := [3]string{"wade", "finn", "jake"}
 	testS := test[:2]
+	testS2 := test[1:]
+
+	// testS2[0] = "python"
+	// test[1] = "python"
+	testS[1] = "python"
+
 	fmt.Println(test, len(test))
 	fmt.Println(testS, len(testS))
+	fmt.Println(testS2, len(testS2))
 
 }
